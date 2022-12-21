@@ -1,0 +1,6 @@
+C:\Users\Vinicius\source\repos\FileManager\Solution\bin\Release\net6.0-windows\publish\FileManager.exe
+C:\Users\Vinicius\source\repos\FileManager\Solution\bin\Release\net6.0-windows\publish\FileManager.dll
+C:\Users\Vinicius\source\repos\FileManager\Solution\bin\Release\net6.0-windows\publish\FileManager.deps.json
+C:\Users\Vinicius\source\repos\FileManager\Solution\bin\Release\net6.0-windows\publish\FileManager.runtimeconfig.json
+C:\Users\Vinicius\source\repos\FileManager\Solution\bin\Release\net6.0-windows\publish\FileManager.dll.config
+C:\Users\Vinicius\source\repos\FileManager\Solution\bin\Release\net6.0-windows\publish\FileManager.pdb

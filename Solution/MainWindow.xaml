@@ -1,0 +1,42 @@
+﻿<Window x:Class="FileManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileManager"
+        mc:Ignorable="d"
+        Title="File Manager" Width="400" SizeToContent="Height"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Closing="Window_Closing"
+        >
+    <Grid Margin="8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="AUTO"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" Grid.ColumnSpan="2">
+            <Label FontSize="20">Select Folder</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Margin="5" >
+            <TextBlock x:Name="TextBlockFolder" Width="auto" HorizontalAlignment="Center" TextAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="5">
+            <Button x:Name="ButtonOpenFolder" Click="ButtonOpenFolder_Click" Width="100" HorizontalAlignment="Center" Content="Open Folder"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="5" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <Button x:Name="ButtonOrganize" Click="ButtonOrganize_Click" Width="100" HorizontalAlignment="Center" Content="Organize"/>
+        </StackPanel>
+
+        <TextBlock x:Name="TextBlockNotification" Visibility="Hidden" Grid.Row="2" Margin="5" Grid.Column="1" Text="Files were moved!"/>
+
+        <!--<local:FolderEntry Grid.Row="3" Grid.ColumnSpan="2" Text="{Binding Path=LogFolder}" Description="Folder for log files"/>-->
+    </Grid>
+</Window>
